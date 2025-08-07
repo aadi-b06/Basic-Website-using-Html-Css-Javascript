@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CONTACT  US</title>
+    </head>
+    <body>
+        <img src = vitlogo.png height="100" width="250">
+        <section><center>
+            <a href="vit club website.html" style="font-size: 150%;">HomePage 🏠</a>
+            <a href="events.html" style="font-size: 150%;">EVENTS 🎸</a>
+            <a href="aboutus.html" style="font-size: 150%;">ABOUT  US 🔽</a>
+        </section></center>
+        <section style="font-size: 200%;"><center>
+            <h2>CONTACT US</h2>
+<section style="background-color: grey;">
+    <h4 style="color: powderblue;">+91 - 7058432258</h4>
+    <h4 style="color: powderblue;">+91 - 8793428634</h4>
+</section></center>
+</section>
+
+<center>
+    <div style="margin-top: 30px;">
+        <label for="questionBox" style="font-size: 120%;">Ask a Question:</label><br>
+        <input type="text" id="questionBox" placeholder="Type your question here" style="width: 300px; padding: 8px; margin-top: 10px;"><br><br>
+        <button onclick="submitQuestion()" style="padding: 10px 20px; font-size: 100%;">Submit</button>
+    </div>
+</center>
+
+<script>
+    function submitQuestion() {
+        const question = document.getElementById('questionBox').value;
+        if (question.trim() === "") {
+            alert("Please enter a question before submitting.");
+        } else {
+            alert("Your question has been submitted: " + question);
+        }
+    }
+</script>
+</body>
+</html>
